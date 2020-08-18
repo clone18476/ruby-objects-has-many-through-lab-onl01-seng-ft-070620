@@ -4,9 +4,9 @@ class Appointment
   @@all = []     # knows about all appointment  instances 
   
   def initialize(date, patient, doctor)  # initialize with a name, doctor, and patient
-    @name = name         # initialize with name 
-    @doctor = doctor      # instance of Appointment belongs to a doctor 
-    @patient = patient      # instance of Appointment belongs to a patient
+    @date = date         # initialize with date 
+    @patient = patient      # instance of Appointment belongs to a patient 
+    @doctor = doctor      # instance of Appointment belongs to a doctor
     @@all << self       # knows about all appointment instances 
   end
   
