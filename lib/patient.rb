@@ -17,11 +17,11 @@ class Patient
   
   def appointments            # has many appointments 
    # binding.pry 
-    Appointment.all.select{|appointment| appointment.genre == self} 
+    Appointment.all.select{|appointment| appointment.patient == self} 
     # Appointment class -> all instances of Appointment class
-    # -> selects from all of the instances of the Appointment class based off of genre using a variable called 'appointment' 
-    # -> sets the selected variable for appointment to the genre that this instance of Appointment belongs to 
-    # -> asks if that is equal to itself, which it is, so it returns true and prints all the appointments in the genre of the current instance of Genre
+    # -> selects from all of the instances of the Appointment class based off of patient using a variable called 'appointment' 
+    # -> sets the selected variable for appointment to the patient that this instance of Appointment belongs to 
+    # -> asks if that is equal to itself, which it is, so it returns true and prints all the appointments in the genre of the current instance of Patient
    # binding.pry 
   end
 
