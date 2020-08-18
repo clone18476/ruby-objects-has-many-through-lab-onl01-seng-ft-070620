@@ -27,7 +27,7 @@ class Patient
 
   
   def doctors    # has many doctors through appointments 
-   appointments.collect{|appointment| appointment.doctor}.uniq
+     appointments.map{|appointment| appointment.doctor}
    # calls the appointments method -> use collect to apply this doctor depending on the appointment
   end
   
