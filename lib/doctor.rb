@@ -17,7 +17,7 @@ class Doctor
   end  
   
   def patients      # has many patients, THROUGH Appointments 
-    Appointment.all.collect{|appointment| appointment.patients}.uniq
+    appointments.map{|appointment| appointment.patient}
   end
  
   def self.all    # knows about all doctor instances 
