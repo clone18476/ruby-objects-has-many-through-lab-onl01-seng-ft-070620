@@ -9,7 +9,7 @@ class Doctor
   end               # knows about all Doctor instances
   
   def new_appointment(date, patient)   # given a date and a patient, creates a new appointment associated with that doctor
-    Appointment.new(date, self, patient)
+    Appointment.new(date, patient, self)
   end
     
   def appointments 
